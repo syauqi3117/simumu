@@ -1,0 +1,87 @@
+[
+  {
+    "id": "hukum-ohm",
+    "title": "Hukum Ohm & Daya Listrik",
+    "subtitle": "Fondasi analisis tegangan, arus, resistansi, dan disipasi daya",
+    "description": "Pelajari hubungan fundamental V = I · R, disipasi panas Joule P = V · I, kurva linear karakteristik V-I, dan batas aman operasional komponen resistor.",
+    "difficulty": "Pemula",
+    "category": "Dasar",
+    "estimatedMinutes": 15,
+    "icon": "Zap",
+    "isAvailable": true,
+    "tags": ["Hukum Ohm", "Daya Listrik", "Resistor", "Simbol IEC/IEEE"]
+  },
+  {
+    "id": "seri-paralel",
+    "title": "Rangkaian Seri & Paralel",
+    "subtitle": "Pembagi tegangan (KVR) dan pembagi arus (KCR)",
+    "description": "Simulasi interaktif penambahan resistor seri & paralel, analisis resistansi ekuivalen (Req), pembagi tegangan, serta percabangan arus Kirchhoff.",
+    "difficulty": "Pemula",
+    "category": "Rangkaian",
+    "estimatedMinutes": 25,
+    "icon": "Layers",
+    "isAvailable": false,
+    "tags": ["Hukum Kirchhoff", "Pembagi Tegangan", "Resistor Ekuivalen"]
+  },
+  {
+    "id": "wiring-dasar",
+    "title": "Wiring Dasar & Kanvas Komponen",
+    "subtitle": "Laboratorium kanvas drag-and-drop dengan komponen nyata",
+    "description": "Rakit sirkuit mandiri di kanvas interaktif dengan baterai/PSU, saklar mekanik, resistor, dan lampu filamen/LED yang menyala sesuai kalkulasi MNA.",
+    "difficulty": "Praktikum",
+    "category": "Rangkaian",
+    "estimatedMinutes": 30,
+    "icon": "Cpu",
+    "isAvailable": false,
+    "tags": ["Drag & Drop", "Kanvas Kabel", "Lampu Pijar", "MNA Solver"]
+  },
+  {
+    "id": "power-supply",
+    "title": "Power Supply (Catu Daya DC)",
+    "subtitle": "Trafo step-down, penyearah dioda, filter kapasitor, & regulator",
+    "description": "Eksplorasi konversi tegangan AC ke DC teregulasi. Amati bentuk gelombang osiloskop di tiap tahap konversi (AC sinusoidal, gelombang penuh, ripple filter).",
+    "difficulty": "Menengah",
+    "category": "Dasar",
+    "estimatedMinutes": 35,
+    "icon": "Activity",
+    "isAvailable": false,
+    "tags": ["Penyearah Dioda", "Filter Ripple", "Regulator 7805", "Gelombang AC-DC"]
+  },
+  {
+    "id": "kapasitor-rc",
+    "title": "Karakteristik Kapasitor & Rangkaian RC",
+    "subtitle": "Transien pengisian & pengosongan dengan integrasi numerik",
+    "description": "Visualisasi grafik V(t) dan I(t) respons transien orde-1. Ubah nilai R dan C untuk mengamati konstanta waktu tau = R · C secara real-time.",
+    "difficulty": "Menengah",
+    "category": "Rangkaian",
+    "estimatedMinutes": 30,
+    "icon": "Sliders",
+    "isAvailable": false,
+    "tags": ["Konstanta Waktu RC", "Transien", "Integrasi Euler/Trapezoidal"]
+  },
+  {
+    "id": "multimeter",
+    "title": "Multimeter Virtual & Pengukuran",
+    "subtitle": "Praktikum instrumen ukur dengan deteksi proteksi beban lebih",
+    "description": "Gunakan probe merah-hitam untuk mengukur VDC, VAC, Arus, dan Ohm pada simpul rangkaian. Dilengkapi peringatan bahaya jika amperemeter dipasang paralel!",
+    "difficulty": "Praktikum",
+    "category": "Instrumen",
+    "estimatedMinutes": 25,
+    "icon": "ShieldCheck",
+    "isAvailable": false,
+    "tags": ["Voltmeter", "Amperemeter", "Probe Dinamis", "Peringatan Korsleting"]
+  },
+  {
+    "id": "osiloskop",
+    "title": "Osiloskop Virtual & Sinyal AC",
+    "subtitle": "Visualisasi sinyal sinus, kotak, segitiga, frekuensi & amplitudo",
+    "description": "Pahami skala Volt/Div dan Time/Div, pengukuran Vpp, Vrms, periode T, frekuensi f, serta pengaturan trigger level untuk menstabilkan gelombang.",
+    "difficulty": "Mahir",
+    "category": "Sinyal",
+    "estimatedMinutes": 35,
+    "icon": "Activity",
+    "isAvailable": false,
+    "tags": ["Volt/Div", "Time/Div", "Vrms & Vpp", "Trigger Signal"]
+  }
+]
+

@@ -1,0 +1,165 @@
+{
+  "id": "hukum-ohm",
+  "title": "Modul 1: Hukum Ohm & Daya Listrik",
+  "subtitle": "Pengantar Analisis Sirkuit Elektrik Linear Tingkat Universitas",
+  "standardInfo": "Standar Simbol: IEC 60617 (Kotak Persegi Panjang) & IEEE Std 315 / ANSI (Garis Zig-zag)",
+  "learningObjectives": [
+    "Memahami hubungan proporsional langsung antara beda potensial (V) dan arus listrik (I) pada konduktor ohmik.",
+    "Menganalisis pengaruh nilai resistansi (R) terhadap kemiringan kurva karakteristik linear V-I.",
+    "Menghitung laju disipasi energi listrik menjadi panas (Daya Joule: P = V · I = I²R = V²/R).",
+    "Mengidentifikasi bahaya thermal overload (kerusakan resistor) akibat melampaui batas rating daya komponen.",
+    "Membaca dan mengonversi kode warna resistor 4 gelang standar industri."
+  ],
+  "theorySections": [
+    {
+      "id": "konsep-dasar",
+      "title": "1. Tiga Besaran Pokok Sirkuit Listrik",
+      "content": "Arus listrik adalah aliran muatan elektron neto per satuan waktu. Agar muatan dapat mengalir melintasi suatu penghantar, diperlukan dorongan gaya gerak listrik yang disebut beda potensial (Tegangan). Setiap material penghantar memiliki derajat perlawanan terhadap aliran elektron ini, yang didefinisikan sebagai Hambatan (Resistansi).",
+      "bulletPoints": [
+        "Tegangan (V): Usaha yang dibutuhkan untuk memindahkan satu coulomb muatan antara dua titik (1 Volt = 1 Joule / Coulomb).",
+        "Arus (I): Laju aliran muatan listrik melewati penampang konduktor (1 Ampere = 1 Coulomb / detik).",
+        "Resistansi (R): Ukuran perlawanan suatu konduktor terhadap arus (1 Ohm = 1 Volt / Ampere)."
+      ]
+    },
+    {
+      "id": "hukum-ohm-matematis",
+      "title": "2. Perumusan Matematis Hukum Ohm",
+      "content": "Ditemukan oleh fisikawan Jerman Georg Simon Ohm pada tahun 1827. Untuk konduktor pada suhu konstan, arus listrik (I) yang mengalir berbanding lurus dengan beda potensial (V) dan berbanding terbalik dengan resistansi (R).",
+      "formula": "V = I · R   ⟺   I = V / R   ⟺   R = V / I",
+      "bulletPoints": [
+        "Jika Tegangan dinaikkan 2× lipat pada R tetap, maka Arus ikut melonjak 2× lipat.",
+        "Jika Resistansi dinaikkan 2× lipat pada V tetap, maka Arus turun menjadi setengahnya (1/2×).",
+        "Pada grafik sumbu-Y (Tegangan) vs sumbu-X (Arus), kemiringan gradien garis linear merepresentasikan nilai Resistansi R."
+      ]
+    },
+    {
+      "id": "daya-listrik-joule",
+      "title": "3. Disipasi Daya Listrik (Efek Joule)",
+      "content": "Saat elektron bertumbukan dengan kisi atom pada material resistor, energi listrik diubah menjadi energi panas (kalor). Laju energi yang diserap resistor per detik disebut Daya Disipasi (P), dinyatakan dalam satuan Watt (W).",
+      "formula": "P = V · I = I² · R = V² / R",
+      "bulletPoints": [
+        "Rating Daya Resistor: Komponen resistor fisik memiliki batas maksimum daya disipasi (misal 0.25W, 0.5W, 1W, 2W).",
+        "Beban Berlebih (Overload): Jika P_hitung > P_rating, resistor akan mengalami panas berlebih (overheating), hangus, atau terbakar terbuka (open circuit)."
+      ]
+    },
+    {
+      "id": "analogi-air",
+      "title": "4. Analogi Hidrolik (Pipa & Tangki Air)",
+      "content": "Analogi intuitif untuk mahasiswa baru elektro: Tegangan listrik dianalogikan sebagai tekanan air dari ketinggian tangki (ketinggian head), Arus listrik dianalogikan sebagai debit air yang mengalir dalam pipa (liter/detik), dan Hambatan adalah penyempitan diameter pipa atau katup keran. Semakin sempit pipa (R besar), semakin kecil debit air (I kecil) untuk tekanan air (V) yang sama.",
+      "bulletPoints": [
+        "Tekanan Air = Tegangan (V)",
+        "Debit Aliran Air = Arus Listrik (I)",
+        "Diameter Sempit Pipa = Resistansi (R)"
+      ]
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "q1",
+      "question": "Sebuah resistor dengan nilai resistansi R = 100 Ω dihubungkan ke sumber tegangan searah (DC) sebesar V = 12 V. Berapakah besar arus listrik (I) yang mengalir melintasi resistor tersebut?",
+      "options": [
+        { "id": "a", "text": "0.12 A (120 mA)" },
+        { "id": "b", "text": "1.20 A (1200 mA)" },
+        { "id": "c", "text": "0.012 A (12 mA)" },
+        { "id": "d", "text": "8.33 A" }
+      ],
+      "correctOptionId": "a",
+      "formula": "I = V / R = 12 V / 100 Ω = 0.12 A = 120 mA",
+      "explanation": "Berdasarkan Hukum Ohm: I = V / R. Substitusi nilai: I = 12 / 100 = 0.12 Ampere (atau 120 mA). Pilihan A adalah jawaban yang benar.",
+      "hint": "Gunakan bentuk rumus I = V / R.",
+      "customizable": true,
+      "teacherParamKey": "q1_v12_r100"
+    },
+    {
+      "id": "q2",
+      "question": "Pada rangkaian dengan tegangan konstan V = 10 V, jika nilai resistansi R diperbesar dari 20 Ω menjadi 80 Ω (naik 4 kali lipat), apa yang terjadi pada arus listrik (I)?",
+      "options": [
+        { "id": "a", "text": "Arus berkurang menjadi 1/4 dari nilai semula" },
+        { "id": "b", "text": "Arus bertambah 4 kali lipat" },
+        { "id": "c", "text": "Arus tetap tidak berubah karena tegangan konstan" },
+        { "id": "d", "text": "Arus berkurang menjadi 1/2 dari nilai semula" }
+      ],
+      "correctOptionId": "a",
+      "formula": "I₂ / I₁ = (V / R₂) / (V / R₁) = R₁ / R₂ = 20 / 80 = 1/4",
+      "explanation": "Arus berbanding terbalik dengan resistansi (I ∝ 1/R). Ketika resistansi diperbesar 4× lipat pada tegangan yang sama, arus yang mengalir akan berkurang secara proporsional menjadi 1/4 dari nilai awalnya (dari 0.5 A menjadi 0.125 A).",
+      "hint": "Perhatikan hubungan berbanding terbalik antara I dan R.",
+      "customizable": false
+    },
+    {
+      "id": "q3",
+      "question": "Sebuah resistor berukuran daya rating 0.25 Watt (1/4 W) dipasang pada tegangan V = 9 V dengan hambatan R = 150 Ω. Apakah resistor tersebut beroperasi dalam batas aman?",
+      "options": [
+        { "id": "a", "text": "Tidak aman, karena daya disipasi P = 0.54 W melampaui batas rating 0.25 W (resistor akan kepanasan)" },
+        { "id": "b", "text": "Aman, karena daya disipasi hanya 0.06 W" },
+        { "id": "c", "text": "Aman, karena arus yang mengalir kurang dari 1 A" },
+        { "id": "d", "text": "Tidak aman, karena tegangan 9V melebihi rating tegangan maksimum resistor" }
+      ],
+      "correctOptionId": "a",
+      "formula": "P = V² / R = (9)² / 150 = 81 / 150 = 0.54 Watt",
+      "explanation": "Disipasi daya aktual dihitung dengan P = V² / R = 9² / 150 = 0.54 Watt. Karena 0.54 W > 0.25 W, resistor akan mengalami kelebihan panas (overheating) yang dapat merusak komponen secara permanen.",
+      "hint": "Hitung daya menggunakan rumus P = V² / R lalu bandingkan dengan rating 0.25 W.",
+      "customizable": true,
+      "teacherParamKey": "q3_power_rating"
+    },
+    {
+      "id": "q4",
+      "question": "Jika seorang mahasiswa melakukan eksperimen dan mendapatkan data kurva V vs I berupa garis lurus yang melalui titik (I = 0.05 A, V = 5 V) dan (I = 0.2 A, V = 20 V), berapakah nilai resistansi komponen tersebut?",
+      "options": [
+        { "id": "a", "text": "100 Ω" },
+        { "id": "b", "text": "25 Ω" },
+        { "id": "c", "text": "400 Ω" },
+        { "id": "d", "text": "0.01 Ω" }
+      ],
+      "correctOptionId": "a",
+      "formula": "R = ΔV / ΔI = (20 - 5) / (0.20 - 0.05) = 15 / 0.15 = 100 Ω",
+      "explanation": "Gradien garis pada kurva tegangan-arus linear merepresentasikan nilai resistansi R = ΔV / ΔI = (20 - 5) / (0.2 - 0.05) = 15 / 0.15 = 100 Ω.",
+      "hint": "Gunakan gradien ΔV dibagi ΔI.",
+      "customizable": false
+    }
+  ],
+  "summaryPoints": [
+    "Hukum Ohm menyatakan hubungan fundamental: Tegangan (V) berbanding lurus dengan Arus (I) dan Resistansi (R).",
+    "Satuan SI: Beda Potensial dalam Volt (V), Arus Listrik dalam Ampere (A), Resistansi dalam Ohm (Ω), dan Daya Listrik dalam Watt (W).",
+    "Daya disipasi Joule dihitung melalui: P = V · I = I²R = V² / R. Selalu periksa kapasitas rating daya fisik resistor (0.25W, 0.5W, dsb) untuk mencegah kerusakan termal.",
+    "Kurva karakteristik V-I komponen ohmik adalah garis lurus yang berawal dari titik asal (0,0) dengan gradien konstan yang merepresentasikan resistansi.",
+    "Dalam perancangan sirkuit nyata, toleransi resistor (emas = 5%, perak = 10%) mempengaruhi presisi nilai hambatan riil."
+  ],
+  "siUnits": [
+    {
+      "quantity": "Tegangan Listrik (Beda Potensial)",
+      "symbol": "V / U",
+      "unit": "Volt",
+      "unitSymbol": "V",
+      "description": "1 Volt = 1 Joule per Coulomb muatan"
+    },
+    {
+      "quantity": "Kuat Arus Listrik",
+      "symbol": "I",
+      "unit": "Ampere",
+      "unitSymbol": "A",
+      "description": "1 Ampere = 1 Coulomb muatan per detik"
+    },
+    {
+      "quantity": "Hambatan Listrik (Resistansi)",
+      "symbol": "R",
+      "unit": "Ohm",
+      "unitSymbol": "Ω",
+      "description": "1 Ohm = 1 Volt per 1 Ampere"
+    },
+    {
+      "quantity": "Daya Listrik (Disipasi Energi)",
+      "symbol": "P",
+      "unit": "Watt",
+      "unitSymbol": "W",
+      "description": "1 Watt = 1 Joule energi per detik = 1 Volt × 1 Ampere"
+    },
+    {
+      "quantity": "Muatan Listrik",
+      "symbol": "Q",
+      "unit": "Coulomb",
+      "unitSymbol": "C",
+      "description": "1 Coulomb ≈ 6.242 × 10¹⁸ muatan elektron"
+    }
+  ]
+}
+
